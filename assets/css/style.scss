@@ -1,0 +1,95 @@
+@charset 'UTF-8';
+//Variables
+// Color
+$color-pri:#044E8D;
+$color-sec:#acacac;
+$color-border: #EEE;
+$color-link: #fff;
+
+// Font
+$font-pri:  'Poppins', 'Mitr';
+
+html,
+body {
+    font-size: 16px;
+    font-family: $font-pri; 
+    color:#000;
+    // background-color: #044E8D;
+}
+
+a {
+    color: #000;
+    &:hover{
+        color: #000;
+    }
+}
+
+.box {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 2%;
+    background-color: #fff;
+    color: #c93636;
+}
+
+.outer-box {
+    width: 100%;
+    padding: 0 2%;
+    border: 2px solid #65d9ff;
+    border-radius: 8px;
+    box-shadow: 0 0 6px #65d9ff;
+}
+
+ิ.border-box {
+    border: 2px solid #65d9ff;
+    border-radius: 8px;
+    box-shadow: 0 0 6px #65d9ff;
+}
+
+.box-yellow {
+    background-color: #ffc000;
+    border: 2px solid #ffc000;
+    border-radius: 8px;
+    color: #000;
+}
+
+.card-trans {
+    background: transparent;
+    border: 1px solid;
+}
+
+.card-top {
+    background: transparent;
+    border-top: 1px solid;
+}
+
+.card-header {
+    padding: .75rem 0.25rem;
+}
+
+.box-result {
+    background: transparent;
+    padding: 5px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 6px #f5af04;
+}
+
+.box-result2 {
+    background: transparent;
+    padding: 5px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 6px #002bff;
+}
+
+
+
+// Import
+@import 'bootstrap.min.css';
+@import 'all.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@400;600;700&family=Poppins:wght@400;600;700;800;900&display=swap');
+@import 'animate.css';
+@import '_head';
+@import '_body';
+@import '_foot';
+@import '_custom';
+@import '_responsive';
