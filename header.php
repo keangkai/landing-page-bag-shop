@@ -21,6 +21,11 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 
 
@@ -28,35 +33,72 @@
 
 
     <!-- Main-Nav -->
-    <nav class="main-nav">
+
+    <div class="d-lg-none d-flex justify-content-between align-items-center px-3"
+        style="background-color: rgba(0, 0, 0, 0.8);">
+        <img src="assets/img/logo.png" alt="logo" width="20%">
+        <h4 class="text-white">KINGLOT</h4>
+    </div>
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top d-none d-lg-flex" id="mainNav"
+        style="background-color: rgba(0, 0, 0, 0.8);">
         <div class="container">
-            <div class="nav-item rela-wrap text-right">
-                <figure class="main-logo">
-                <a href="https://kanghom.com/bagpgshop/"><img src="assets/img/main-logo.png" alt=""></a>
-                </figure>
-                <ul class="main-menu">
-                    <li><a href="https://kanghom.com/bagpgshop/">หน้าแรก</a></li>
-                    <li><a href="product.php">สินค้า</a></li>
-                    <li><a href="review.php">รีววจากลูกค้า</a></li>
-                    <li><a href="#">LINE</a></li>
+            <div class="d-flex justify-content-between">
+                <!-- <div id="header"> -->
+                <img id="header" src="./assets/img/logo.png" alt="logo" width="90px" />
+                <!-- </div> -->
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="index.php">หน้าแรก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="pay_rate.php">อัตราการจ่าย</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="rule.php">กฏกติกาและข้อบังคับ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger login-btn" href="#contact"><i class="fas fa-user"></i>
+                            สมัครสมาชิก</a>
+                    </li>
                 </ul>
-                <div class="item-mobile">
-                    <div class="open-menu-mobile">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                </div>
             </div>
         </div>
     </nav>
-    <!-- End Main-Nav -->
 
 
 
-    <div class="menu-mobile-blog">
-        <ul class="mobile-menu">
-            <li><a href="https://kanghom.com/bagpgshop/">หน้าแรก</a></li>
-            <li><a href="product.php">สินค้า</a></li>
-            <li><a href="review.php">รีววจากลูกค้า</a></li>
-            <li><a href="#">LINE</a></li>
-        </ul>
-    </div>
+
+
+
+
+    <script>
+    // When the user scrolls down 50px from the top of the document, resize the header's font size
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("header").style.width = "60px";
+        } else {
+            document.getElementById("header").style.width = "100px";
+        }
+    }
+    </script>
+
+
+
+</body>
+
+</html>

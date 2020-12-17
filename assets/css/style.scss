@@ -1,95 +1,209 @@
 @charset 'UTF-8';
 //Variables
 // Color
-$color-pri:#044E8D;
-$color-sec:#acacac;
-$color-border: #EEE;
+$color-pri: #044e8d;
+$color-sec: #acacac;
+$color-border: #eee;
 $color-link: #fff;
 
 // Font
-$font-pri:  'Poppins', 'Mitr';
+$font-pri: "Poppins", "Mitr";
 
 html,
 body {
-    font-size: 16px;
-    font-family: $font-pri; 
-    color:#000;
-    // background-color: #044E8D;
+  font-size: 16px;
+  font-family: $font-pri;
+  color: #000;
+  background: url(../img/BG.jpg);
+  content: "";
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+  // background-color: #044E8D;
 }
 
 a {
+  color: #000;
+  &:hover {
     color: #000;
-    &:hover{
-        color: #000;
-    }
+  }
 }
 
 .box {
-    border: 1px solid #fff;
-    border-radius: 5px;
-    padding: 2%;
-    background-color: #fff;
-    color: #c93636;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 2%;
+  background-color: #fff;
+  color: #c93636;
 }
 
 .outer-box {
-    width: 100%;
-    padding: 0 2%;
-    border: 2px solid #65d9ff;
-    border-radius: 8px;
-    box-shadow: 0 0 6px #65d9ff;
+  width: 100%;
+  padding: 0 2%;
+  border: 2px solid #65d9ff;
+  border-radius: 8px;
+  box-shadow: 0 0 6px #65d9ff;
 }
 
 ิ.border-box {
-    border: 2px solid #65d9ff;
-    border-radius: 8px;
-    box-shadow: 0 0 6px #65d9ff;
+  border: 2px solid #65d9ff;
+  border-radius: 8px;
+  box-shadow: 0 0 6px #65d9ff;
 }
 
 .box-yellow {
-    background-color: #ffc000;
-    border: 2px solid #ffc000;
-    border-radius: 8px;
-    color: #000;
+  background-color: #ffc000;
+  border: 2px solid #ffc000;
+  border-radius: 8px;
+  color: #000;
 }
 
 .card-trans {
-    background: transparent;
-    border: 1px solid;
+  background: transparent;
+  border: 1px solid;
 }
 
 .card-top {
-    background: transparent;
-    border-top: 1px solid;
+  background: transparent;
+  border-top: 1px solid;
 }
 
 .card-header {
-    padding: .75rem 0.25rem;
+  padding: 0.75rem 0.25rem;
 }
 
 .box-result {
-    background: transparent;
-    padding: 5px;
-    border: 1px solid #fff;
-    box-shadow: 0 0 6px #f5af04;
+  background: transparent;
+  padding: 5px;
+  border: 1px solid #fff;
+  box-shadow: 0 0 6px #f5af04;
 }
 
 .box-result2 {
-    background: transparent;
-    padding: 5px;
-    border: 1px solid #fff;
-    box-shadow: 0 0 6px #002bff;
+  background: transparent;
+  padding: 5px;
+  border: 1px solid #fff;
+  box-shadow: 0 0 6px #002bff;
 }
 
+.theme-mobile {
+  position: fixed;
+  bottom: 0;
+  color: #fff;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(45, 108, 253, 1) 66%
+  );
+}
 
+.space-top {
+  padding-top: 10%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff !important;
+}
+
+.login-btn {
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.95);
+  border: 1px solid white;
+  transition: 0.3s all ease-in-out;
+  color: #fff !important;
+  border-radius: 50px;
+}
+
+.menu-box {
+  display: block;
+  border: 2px solid #65d9ff;
+  border-radius: 8px;
+  box-shadow: 0 0 6px #65d9ff;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.lottery-box {
+  color: #fff !important;
+  max-width: 1024px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1.2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lottery-text-head {
+  font-size: 2rem;
+}
+
+.lottery-sub-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.rule-box {
+  color: #fff !important;
+  max-width: 1024px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1.2rem 1rem;
+}
+
+.border-yeegee2 {
+  color: #fff !important;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1.2rem 1rem;
+}
+
+#fade {
+  font-size: 0;
+  margin-top: 10%;
+}
+#fade img {
+  width: 50%;
+  opacity: 0;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /* CSS */
+  #fade img {
+    width: 100%;
+    opacity: 0;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* CSS */
+  #fade img {
+    width: 100%;
+    opacity: 0;
+  }
+}
 
 // Import
-@import 'bootstrap.min.css';
-@import 'all.min.css';
-@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@400;600;700&family=Poppins:wght@400;600;700;800;900&display=swap');
-@import 'animate.css';
-@import '_head';
-@import '_body';
-@import '_foot';
-@import '_custom';
-@import '_responsive';
+@import "bootstrap.min.css";
+@import "all.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@400;600;700&family=Poppins:wght@400;600;700;800;900&display=swap");
+@import "animate.css";
+@import "_head";
+@import "_body";
+@import "_foot";
+@import "_custom";
+@import "_responsive";

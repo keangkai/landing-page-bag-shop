@@ -1,7 +1,16 @@
-    
+    <!DOCTYPE html>
+    <html lang="en">
 
-    <!-- New Arrival -->
-    <section class="new-arrival rela-wrap">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.min.css">
+    </head>
+
+    <body>
+
+        <!-- New Arrival -->
+        <!-- <section class="new-arrival rela-wrap">
         <div class="caption-cen text-center" style="width:40%;margin:0 auto;">
             <h2 class="title-newarrival">ปลุกความเป็นแฟชั่นในตัวคุณ</h2>
             <div class="desc">
@@ -43,12 +52,31 @@
             </div>
         </div>
       
-    </section>
-    <!-- End New Arrival -->
+    </section> -->
+        <!-- End New Arrival -->
+        <div class="d-flex d-lg-none justify-content-around theme-mobile w-100 p-2">
+            <a href="index.php" class="d-flex flex-column justify-content-center  align-items-center text-white">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                หน้าแรก
+            </a>
+            <a href="pay_rate.php" class="d-flex flex-column justify-content-center  align-items-center text-white">
+                <i class="fas fa-money-bill-wave"></i>
+                อัตราการจ่าย
+            </a>
+            <a href="rule.php" class="d-flex flex-column justify-content-center  align-items-center text-white">
+                <i class="fas fa-lock"></i>
+                กฏกติกา
+            </a>
+            <a href="" class="d-flex flex-column justify-content-center  align-items-center text-white">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                เข้าสู่ระบบ
+            </a>
+        </div>
 
 
-    <!-- Main-Footer -->
-    <footer class="main-footer">
+
+        <!-- Main-Footer -->
+        <!-- <footer class="main-footer">
         <div class="footer-item text-center">
             <figure class="footer-logo">
             <a href="https://kanghom.com/bagpgshop/"><img src="assets/img/main-logo.png" alt=""></a>
@@ -60,18 +88,18 @@
         <div class="copyright-wrap text-center">
             <p>© 2020 COPYRIGHT KRYSTALBAKA</p>
         </div>
-    </footer>
-    <!-- End Main-Footer -->
+    </footer> -->
+        <!-- End Main-Footer -->
 
 
 
 
 
-      <!-- Optional JavaScript -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/script.js"></script>
+        <!-- Optional JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/script.js"></script>
 
     </body>
 
-</html>
+    </html>
