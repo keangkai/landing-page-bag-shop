@@ -1,86 +1,57 @@
-@charset 'UTF-8';
 @media only screen and (max-width: 767px) {
   .logo-mobile {
-    width: 50%;
-  }
+    width: 50%; }
   .row-btn-contact-mobile {
-    display: flex;
-  }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .border-btn-contact {
     padding: 2% !important;
-    border-radius: 5px;
-  }
-
+    border-radius: 5px; }
   .main-caption {
     width: 100%;
-    padding-top: 25%;
-  }
+    padding-top: 25%; }
   .section-row-product {
-    margin: 0% 0%;
-  }
-
+    margin: 0% 0%; }
   figure {
-    margin: 5% 0%;
-  }
-}
+    margin: 5% 0%; } }
 
-@media only screen and (min-width: 767px) {
-}
 /* iPhone 5 Retina regardless of IOS version */
 @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
   .logo-mobile {
-    width: 50%;
-  }
+    width: 50%; }
   .main-caption {
     width: 100%;
-    padding-top: 25%;
-  }
-}
+    padding-top: 25%; } }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .logo-mobile {
-    width: 30%;
-  }
+    width: 30%; }
   .main-caption {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 1366px) {
-}
-@media only screen and (max-width: 991px) {
-}
+    width: 100%; } }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   .container {
     max-width: 991px;
-    width: 991px;
-  }
+    width: 991px; }
   .logo-ipad {
-    width: 100%;
-  }
-}
+    width: 100%; } }
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .logo-ipad {
-    width: 100%;
-  }
-}
+    width: 100%; } }
+
 @media only screen and (min-width: 1367px) {
   .container {
     max-width: 1344px;
-    width: 1344px;
-  }
-}
+    width: 1344px; } }
 
 /* Portrait */
 @media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
   .container {
     max-width: 991px;
-    width: 991px;
-  }
+    width: 991px; }
   .navbar-expand-lg .navbar-collapse {
-    width: 100%;
-  }
-}
+    width: 100%; } }
 
 /* Landscape */
-@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
-}
